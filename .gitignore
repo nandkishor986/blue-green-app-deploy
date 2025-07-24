@@ -31,3 +31,35 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Maven
+target/
+*.log
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Jenkins
+*.jenkinsfile.backup
+*.jenkins
+
+# Kubernetes sensitive files
+*.yaml.backup
+service_account.yaml
+
+# Docker
+*.tar
+*.dockerignore
+
+# Git
+.gitignore
+
+# Misc
+*.class
+*.swp
