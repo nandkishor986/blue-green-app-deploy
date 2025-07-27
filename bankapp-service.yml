@@ -9,6 +9,6 @@ spec:
     version: blue # this can be changed to green when switching traffoc.
   ports:
     - port: 80            # ALB hits this
-      targetPort: 30585   # Pod container port
+      targetPort: 8080   # Pod container port
 
 

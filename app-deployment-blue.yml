@@ -16,9 +16,15 @@ spec:
     spec:
       containers:
       - name: bankapp
-        image: nandkishor986/bank_app:blue # Adjust the image tag for the blue version
+        image: nandkishor986/bank_app:blue
         ports:
         - containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 10
         env:
         - name: SPRING_DATASOURCE_URL
           value: jdbc:mysql://mysql-service:3306/bankappdb?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
@@ -33,3 +39,4 @@ spec:
           limits:
             memory: "1000Mi"
             cpu: "1000m"
+
