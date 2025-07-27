@@ -7,4 +7,11 @@ spec:
   type: ClusterIP
   selector:
     app: bankapp
-    version: blue # This can be changed to "green" when switching traffic
+    version: blue # this can be changed to green when switching traffoc. 
+  ports:
+    - port: 80
+      targetPort: 30585
+      protocol: TCP
+
+
+
