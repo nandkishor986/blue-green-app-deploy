@@ -5,6 +5,7 @@ target/
 !**/src/test/**/target/
 
 ### STS ###
+
 .apt_generated
 .classpath
 .factorypath
@@ -14,12 +15,14 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
+
 .idea
 *.iws
 *.iml
 *.ipr
 
 ### NetBeans ###
+
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -30,36 +33,41 @@ build/
 !**/src/test/**/build/
 
 ### VS Code ###
+
 .vscode/
 
 # Maven
+
 target/
 *.log
 
 # IDEs
+
 .vscode/
 .idea/
 *.iml
 
 # OS-specific
+
 .DS_Store
 Thumbs.db
 
 # Jenkins
+
 *.jenkinsfile.backup
 *.jenkins
 
 # Kubernetes sensitive files
+
 *.yaml.backup
 service_account.yaml
 
 # Docker
+
 *.tar
 *.dockerignore
 
-# Git
-.gitignore
-
 # Misc
+
 *.class
 *.swp

@@ -6,7 +6,5 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    app: bankapp-blue
-  ports:
-    - port: 80
-      targetPort: 30585
+    app: bankapp
+    version: blue # This can be changed to "green" when switching traffic
