@@ -4,14 +4,11 @@ metadata:
   name: bankapp-service
   namespace: webapps
 spec:
-  type: ClusterIP
   selector:
     app: bankapp
-    version: blue # this can be changed to green when switching traffoc. 
+    version: blue # this can be changed to green when switching traffoc.
   ports:
-    - port: 80
-      targetPort: 30585
-      protocol: TCP
-
+    - port: 80            # ALB hits this
+      targetPort: 30585   # Pod container port
 
 
